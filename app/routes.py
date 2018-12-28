@@ -3,7 +3,7 @@ from app import app
 
 
 @app.route("/")
-@app.route("/home")
-def index():
+@app.route("/about")
+def about():
     user = {"username": "Miguel"}
-    return render_template("index.html", title = "HomePage", user=user)
+    return render_template("index.html", title = "Home", user=user)
