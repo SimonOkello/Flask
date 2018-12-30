@@ -82,3 +82,4 @@ sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed
 2018-12-30 12:48:56,253 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
 2018-12-30 12:50:38,028 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
 2018-12-30 12:58:03,790 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+2018-12-30 13:02:51,580 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
