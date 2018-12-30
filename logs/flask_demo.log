@@ -72,3 +72,13 @@ Traceback (most recent call last):
     cursor.execute(statement, parameters)
 sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.username [SQL: 'UPDATE user SET username=?, about_me=? WHERE user.id = ?'] [parameters: ('susan', 'I love Flask Framework', 3)] (Background on this error at: http://sqlalche.me/e/gkpj)
 2018-12-30 11:47:37,097 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+2018-12-30 12:34:11,192 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+2018-12-30 12:36:56,042 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+2018-12-30 12:37:45,399 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+2018-12-30 12:38:48,457 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+2018-12-30 12:39:27,841 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+2018-12-30 12:40:22,693 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+2018-12-30 12:41:12,841 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+2018-12-30 12:48:56,253 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+2018-12-30 12:50:38,028 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+2018-12-30 12:58:03,790 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
