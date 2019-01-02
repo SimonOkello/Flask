@@ -81,3 +81,8 @@ jinja2.exceptions.TemplateNotFound: bootstrap/layout.html
 2019-01-03 01:08:43,688 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:48]
 2019-01-03 01:12:21,654 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:48]
 2019-01-03 01:30:49,852 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:48]
+2019-01-03 01:50:22,985 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:48]
+2019-01-03 01:51:40,106 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:48]
+2019-01-03 01:54:23,493 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:48]
+2019-01-03 01:55:19,908 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:48]
+2019-01-03 01:56:25,619 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:48]
