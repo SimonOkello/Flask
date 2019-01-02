@@ -1,14 +1,4 @@
-2018-12-30 11:27:30,337 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 11:27:57,356 ERROR: Exception on /edit_profile [POST] [in c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py:1761]
-Traceback (most recent call last):
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
-    context)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
-    cursor.execute(statement, parameters)
-sqlite3.IntegrityError: UNIQUE constraint failed: user.username
-
-The above exception was the direct cause of the following exception:
-
+2019-01-03 01:01:44,951 ERROR: Exception on / [GET] [in c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -24,66 +14,104 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\routes.py", line 86, in edit_profile
-    db.session.commit()
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
-    return getattr(self.registry(), name)(*args, **kwargs)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\orm\session.py", line 954, in commit
-    self.transaction.commit()
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\orm\session.py", line 467, in commit
-    self._prepare_impl()
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\orm\session.py", line 447, in _prepare_impl
-    self.session.flush()
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\orm\session.py", line 2313, in flush
-    self._flush(objects)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\orm\session.py", line 2440, in _flush
-    transaction.rollback(_capture_exception=True)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\util\langhelpers.py", line 66, in __exit__
-    compat.reraise(exc_type, exc_value, exc_tb)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\util\compat.py", line 249, in reraise
-    raise value
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\orm\session.py", line 2404, in _flush
-    flush_context.execute()
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 395, in execute
-    rec.execute(self)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 560, in execute
-    uow
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 177, in save_obj
-    mapper, table, update)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 774, in _emit_update_statements
-    execute(statement, multiparams)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\engine\base.py", line 948, in execute
-    return meth(self, multiparams, params)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
-    return connection._execute_clauseelement(self, multiparams, params)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
-    compiled_sql, distilled_params
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\engine\base.py", line 1200, in _execute_context
-    context)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
-    exc_info
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
-    reraise(type(exception), exception, tb=exc_tb, cause=cause)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\util\compat.py", line 248, in reraise
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\routes.py", line 41, in index
+    return render_template("index.html", title="Home", form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\_compat.py", line 37, in reraise
     raise value.with_traceback(tb)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
-    context)
-  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
-    cursor.execute(statement, parameters)
-sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.username [SQL: 'UPDATE user SET username=?, about_me=? WHERE user.id = ?'] [parameters: ('susan', 'I love Flask Framework', 3)] (Background on this error at: http://sqlalche.me/e/gkpj)
-2018-12-30 11:47:37,097 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 12:34:11,192 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 12:36:56,042 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 12:37:45,399 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 12:38:48,457 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 12:39:27,841 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 12:40:22,693 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 12:41:12,841 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 12:48:56,253 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 12:50:38,028 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 12:58:03,790 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 13:02:51,580 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 13:12:37,924 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 13:20:43,813 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 13:35:28,606 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
-2018-12-30 15:34:39,348 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:45]
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\layout.html", line 1, in top-level template code
+    {% extends "bootstrap/layout.html" %}
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/layout.html
+2019-01-03 01:01:45,298 ERROR: Exception on / [GET] [in c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\routes.py", line 41, in index
+    return render_template("index.html", title="Home", form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\layout.html", line 1, in top-level template code
+    {% extends "bootstrap/layout.html" %}
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/layout.html
+2019-01-03 01:01:48,682 ERROR: Exception on / [GET] [in c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\routes.py", line 41, in index
+    return render_template("index.html", title="Home", form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\layout.html", line 1, in top-level template code
+    {% extends "bootstrap/layout.html" %}
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/layout.html

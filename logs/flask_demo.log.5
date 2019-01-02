@@ -1,0 +1,118 @@
+2019-01-03 00:49:47,479 ERROR: Exception on / [GET] [in c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\routes.py", line 41, in index
+    return render_template("index.html", title="Home", form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\index.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\layout.html", line 1, in top-level template code
+    {% extends "bootstrap/layout.html" %}
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/layout.html
+2019-01-03 01:01:39,754 INFO: Flask_Demo startup [in C:\Users\Simon Okello\Documents\ANDELA\Flask\app\__init__.py:48]
+2019-01-03 01:01:42,511 ERROR: Exception on / [GET] [in c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\routes.py", line 41, in index
+    return render_template("index.html", title="Home", form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\layout.html", line 1, in top-level template code
+    {% extends "bootstrap/layout.html" %}
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/layout.html
+2019-01-03 01:01:44,582 ERROR: Exception on / [GET] [in c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\routes.py", line 41, in index
+    return render_template("index.html", title="Home", form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Simon Okello\Documents\ANDELA\Flask\app\templates\layout.html", line 1, in top-level template code
+    {% extends "bootstrap/layout.html" %}
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\simon okello\documents\andela\flask\env\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/layout.html
